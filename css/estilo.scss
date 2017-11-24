@@ -1,0 +1,16 @@
+// helpers
+@import 'helpers/variaveis';
+@import 'helpers/mixins';
+//reset
+*{
+	margin:0 auto;
+	padding:0 auto; 
+}
+
+body{background: black;}
+
+// base
+@import 'base/historia';
+@import 'base/header';
+@import 'base/principal';
+@import 'base/ofertas';

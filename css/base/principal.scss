@@ -1,0 +1,11 @@
+@media screen and (max-width:1440px){
+
+	@include estilo-principal ($top1G,$top2G,$top3G,$maioraltura,$maior-largura,$imgPrincipal);
+	
+}
+
+@media screen and (max-width:660px){
+@include estilo-principal ($top1p,$top2p,$top3p,$menoraltura,$menor-largura,$menoraltura);
+	
+}
+//animação do slide

@@ -1,0 +1,22 @@
+.modal {
+  margin-top: 75px; }
+
+.modal-header, .modal-footer, .modal-body {
+  background: black;
+  opacity: 0.9;
+  @include borda-arredondada(0.3em);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+	 }
+
+.modal h4 {
+  color: orange; }
+
+.modal button {
+  color: white; }
+
+.modal button:hover {
+  color: orange; }
+
+.modal p {
+  color: white; }

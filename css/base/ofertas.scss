@@ -1,0 +1,51 @@
+
+.item{
+	
+	height:400px;
+	display: flex;
+	align-items: center;
+	
+}
+.ofertas{
+	background:#111;
+	opacity:0.9;
+	
+}
+.ofertaimg{
+	height:225px;
+	width: 275px;
+	margin:50px 30px 10px 40px;
+	@include borda-arredondada;
+}
+
+.animation{
+	display: flex;
+	opacity:0;
+	transition:.4s;
+/*propriedades para animação de deslocamento*/
+	transform: translate3d(-100px,0px,0px);
+	}
+.anime{
+	display: flex;
+	opacity:0;
+	transition:.4s;
+	overflow:hidden;
+/*propriedades para animação de deslocamento*/
+	transform: translate3d(-100px,0px,0px);
+	}
+.imgoferta{
+	flex:1;
+	margin-left:3%;	
+}
+
+.txtoferta{
+	color: white;
+	margin-left:3%;
+	flex:8;
+}
+.init-anime{
+	opacity:1;
+	transition: .4s all ease;
+	transform: translate3d(0px,0px,0px);
+	
+}

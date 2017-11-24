@@ -1,0 +1,88 @@
+@mixin estilo-principal ( $top1,$top2,$top3,$altura-principal,$max-width-principal,$fundo-principal){	
+
+.principal {
+	background: black;
+}
+
+
+.slide {
+	position: relative;
+	overflow: hidden;
+	opacity:.7;
+}
+	.slide:hover{
+		opacity:1;
+	}
+
+.slide > * {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s;
+}
+
+.slide > .active {
+	position: relative;
+	visibility: visible;
+	opacity: 1;
+}
+	
+	
+
+.principal img {
+	display: block;
+	max-width: 100%;
+	
+}
+.principal h1 {
+	color: white;
+	margin-top: $top1;
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.principal h2 {
+	color: white;
+	margin-top: $top2;
+	width:400px;
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+.principal h3{
+	color: white;
+	margin-top: $top3;
+	margin-left:20px;
+	text-align: center;
+	width: 400px;
+	font-size: 2em;
+	text-transform: uppercase;
+	}
+	
+.principal{
+	transition:0.6s;
+	height:$altura-principal;
+	max-height:630px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	max-width:$max-width-principal;
+}
+
+}
+
+@mixin borda-arredondada($raio:0.3em){
+	-webkit-border-radius:$raio;
+	-moz-border-radius:$raio;
+	-o-border-radius:$raio;
+	-ms-border-radius:$raio;
+    border-radius:$raio;
+}
+
+@mixin flexbox{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
